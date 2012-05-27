@@ -16,7 +16,7 @@ and install it inside Joomla.
 
 ## Why are XMLWriter and SimpleXML required?
 The XMLWriter extension is required because we have to create a new templateDetails.xml for your new template. If you
-see something like `Class XMLWriter / SimpleXML not found in ........` then you're host doesn't have support for them.
+see something like `Class XMLWriter / SimpleXML not found in ........` then your host doesn't have support for them.
 Normally these extensions are enabled by default, so you could try a L/W/MAMP installation on your own computer to run
 this tool.
 
