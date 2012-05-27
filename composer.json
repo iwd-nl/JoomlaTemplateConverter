@@ -1,7 +1,24 @@
 {
+    "name": "IntoWebDevelopment/JoomlaTemplateConverter",
+    "description": "Convert Joomla 1.5 templates to a 1.7 / 2.5 equivalent",
+    "keywords": [ "joomla", "converter" ],
+    "version": "1.0-beta",
+    "license": "MIT",
+    "authors": [ {
+        "name": "IntoWebDevelopment",
+        "email": "info@intowebdevelopment.nl",
+        "homepage": "https://intowebdevelopment.nl",
+        "role": "Developer"
+    } ],
     "require": {
+        "php": ">=5.3.2",
         "symfony/Filesystem": "dev-master",
         "symfony/Finder": "dev-master",
         "symfony/ClassLoader": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "IntoWebDevelopment": "src"
+        }
     }
 }
