@@ -1,0 +1,7 @@
+{
+    "require": {
+        "symfony/Filesystem": "dev-master",
+        "symfony/Finder": "dev-master",
+        "symfony/ClassLoader": "dev-master"
+    }
+}
