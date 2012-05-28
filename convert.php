@@ -79,4 +79,4 @@ foreach ($templates as $template) {
 }
 
 echo sprintf("All templates ('%s') are successfully migrated to Joomla 2.5. Please double check the results before uploading this.\n", implode(', ', $names));
-echo "When you think it's okay then go ahead and archive the contents from src" . DIRECTORY_SEPARATOR . "Templates into a ZIP-file.";
+echo "When you think it's okay then go ahead and archive the contents from src" . DIRECTORY_SEPARATOR . "Templates into a ZIP-file.\n";
