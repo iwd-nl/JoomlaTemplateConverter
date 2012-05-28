@@ -12,9 +12,9 @@
     } ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/Filesystem": "dev-master",
-        "symfony/Finder": "dev-master",
-        "symfony/ClassLoader": "dev-master"
+        "symfony/filesystem": "dev-master",
+        "symfony/finder": "dev-master",
+        "symfony/class-loader": "dev-master"
     },
     "autoload": {
         "psr-0": {

@@ -6,7 +6,14 @@
  * @copyright Copyright (c) 2012, IntoWebDevelopment
  */
 
-require_once __DIR__ . '/lib/vendor/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+// Composer style
+if (file_exists('vendor/autoload.php')) {
+    require_once 'vendor/autoload.php';
+} else {
+    // Git submodule style
+    require_once __DIR__ . '/lib/vendor/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+}
+
 require_once __DIR__ . '/src/IntoWebDevelopment/Converter/config.php';
 
 use Symfony\Component\ClassLoader\UniversalClassLoader;
@@ -21,6 +28,10 @@ $loader->registerNamespaces(array(
 use Symfony\Component\Finder\Finder;
 use IntoWebDevelopment\Converter\Template\Parser;
 use IntoWebDevelopment\Converter\Template\Template;
+
+if (!is_dir('src' . DIRECTORY_SEPARATOR . 'Template')) {
+    mkdir('src' . DIRECTORY_SEPARATOR . 'Template');
+}
 
 $templates = Finder::create()->directories()->exclude('backup')->depth(0)->in('src' . DIRECTORY_SEPARATOR . 'Template');
 $templates_zip = Finder::create()->files()->name('*.zip')->depth(0)->in('src' . DIRECTORY_SEPARATOR . 'Template');
